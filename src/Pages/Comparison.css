@@ -1,0 +1,380 @@
+/* =================================================
+   COMPARISON PAGE
+================================================= */
+
+.comparison-page {
+  width: 100%;
+  background: #fff;
+  color: #222;
+}
+
+/* =================================================
+   TOP PRODUCTS
+================================================= */
+
+.comparison-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr 1fr;
+
+  align-items: start;
+
+  padding: 70px 30px 55px;
+
+  gap: 30px;
+}
+
+
+/* =================================================
+   INTRO
+================================================= */
+
+.comparison-intro {
+  padding-top: 35px;
+}
+
+.comparison-intro h2 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.view-more {
+  color: #777;
+  text-decoration: none;
+
+  border-bottom: 2px solid #777;
+
+  padding-bottom: 5px;
+
+  font-size: 16px;
+}
+
+
+/* =================================================
+   PRODUCT
+================================================= */
+
+.comparison-product {
+  text-align: left;
+}
+
+.product-image-box {
+  width: 100%;
+  height: 190px;
+
+  background: #f9f4ec;
+
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.product-image-box img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 10px;
+}
+
+.comparison-product h2 {
+  font-size: 22px;
+
+  margin: 20px 0 8px;
+
+  font-weight: 600;
+}
+
+.comparison-price {
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-bottom: 12px;
+}
+
+
+/* =================================================
+   RATING
+================================================= */
+
+.rating {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  white-space: nowrap;
+}
+
+.stars {
+  color: #ffc107;
+
+  font-size: 18px;
+
+  letter-spacing: 1px;
+}
+
+.rating-number {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.review-count {
+  border-left: 1px solid #999;
+
+  padding-left: 10px;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+
+/* =================================================
+   CHOOSE PRODUCT
+================================================= */
+
+.choose-product {
+  padding-top: 75px;
+}
+
+.choose-product label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.choose-product select {
+  width: 100%;
+
+  height: 48px;
+
+  padding: 0 15px;
+
+  border: none;
+
+  background: #b88b2b;
+
+  color: white;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  outline: none;
+}
+
+.choose-product select option {
+  background: white;
+  color: #222;
+}
+
+
+/* =================================================
+   TABLE
+================================================= */
+
+.comparison-table {
+  width: 100%;
+
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(180px, 1.2fr)
+    minmax(250px, 1fr)
+    minmax(250px, 1fr);
+
+  min-height: 80px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.table-row > div {
+  padding: 25px 30px;
+
+  border-right: 1px solid #ddd;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.table-row > div:last-child {
+  border-right: none;
+}
+
+.table-label {
+  font-weight: 600;
+  color: #555;
+}
+
+.table-heading {
+  background: #fafafa;
+
+  min-height: 65px;
+}
+
+.table-heading > div {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.table-heading .table-label {
+  font-size: 20px;
+
+  color: #222;
+}
+
+
+/* =================================================
+   CART BUTTON
+================================================= */
+
+.cart-row {
+  border-bottom: none;
+
+  min-height: 110px;
+}
+
+.cart-row > div {
+  justify-content: center;
+}
+
+.comparison-cart-btn {
+  border: none;
+
+  background: #b88b2b;
+
+  color: white;
+
+  padding: 16px 35px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.comparison-cart-btn:hover {
+  background: #98701e;
+}
+
+
+/* =================================================
+   FEATURES
+================================================= */
+
+.comparison-features {
+  width: 100%;
+
+  background: #faf5ed;
+
+  padding: 55px 5%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+}
+
+.comparison-features div {
+  text-align: center;
+}
+
+.comparison-features h3 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+}
+
+.comparison-features p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 15px;
+}
+
+
+/* =================================================
+   RESPONSIVE
+================================================= */
+
+@media (max-width: 1000px) {
+
+  .comparison-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .comparison-intro {
+    grid-column: span 2;
+  }
+
+  .choose-product {
+    padding-top: 20px;
+  }
+
+  .comparison-features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .comparison-container {
+    grid-template-columns: 1fr;
+
+    padding: 40px 20px;
+  }
+
+  .comparison-intro {
+    grid-column: auto;
+  }
+
+  .comparison-product {
+    width: 100%;
+  }
+
+  .choose-product {
+    padding-top: 10px;
+  }
+
+  .table-row {
+    grid-template-columns: 130px 1fr 1fr;
+
+    min-width: 700px;
+  }
+
+  .comparison-table {
+    overflow-x: auto;
+  }
+
+  .comparison-features {
+    grid-template-columns: 1fr;
+
+    padding: 40px 25px;
+  }
+
+}

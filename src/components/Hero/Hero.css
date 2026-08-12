@@ -1,0 +1,491 @@
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN HERO SECTION
+   Homepage
+========================================= */
+
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 90px);
+
+  margin-top: 90px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 40px 7%;
+}
+
+
+/* Main Hero Overlay */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* Main Hero Content */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 600px;
+
+  background: #fdf0dd;
+
+  padding: 55px;
+
+  border-radius: 8px;
+
+  animation: slideUp 0.8s ease;
+}
+
+
+/* Main Hero Subtitle */
+
+.hero-subtitle {
+  font-size: 18px;
+
+  letter-spacing: 4px;
+
+  color: #444;
+
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+
+/* Main Hero Heading */
+
+.hero-content h1 {
+  font-size: 58px;
+
+  color: #b88e2f;
+
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+
+/* Main Hero Description */
+
+.hero-description {
+  font-size: 18px;
+
+  color: #444;
+
+  line-height: 1.7;
+
+  margin-bottom: 35px;
+}
+
+
+/* Main Hero Button */
+
+.hero-content button {
+  padding: 18px 50px;
+
+  background: #b88e2f;
+
+  color: #fff;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+
+/* Button Hover */
+
+.hero-content button:hover {
+  background: #000;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   MAIN HERO ANIMATION
+========================================= */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   MAIN HERO - TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .hero {
+    justify-content: center;
+
+    padding: 40px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+
+    padding: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+  }
+}
+
+
+/* =========================================
+   MAIN HERO - MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    margin-top: 80px;
+
+    min-height: calc(100vh - 80px);
+
+    justify-content: center;
+
+    padding: 20px;
+  }
+
+  .hero-content {
+    width: 100%;
+
+    padding: 30px 25px;
+
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+
+    letter-spacing: 2px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-content button {
+    width: 100%;
+
+    padding: 15px;
+  }
+}
+
+
+/* =========================================
+   MAIN HERO - SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .hero-content {
+    padding: 25px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+}
+
+
+/* =================================================
+   INNER PAGE HERO
+   About / Shop / Blog / Services / Contact
+================================================= */
+
+.inner-hero {
+  width: 100%;
+
+  height: 330px;
+
+  margin-top: 90px;
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 30px;
+}
+
+
+/* =========================================
+   INNER HERO
+   NO OVERLAY / NO EXTRA COLOR
+========================================= */
+
+.inner-hero .hero-overlay {
+  display: none;
+}
+
+
+/* =========================================
+   INNER HERO CONTENT
+========================================= */
+
+.inner-hero .hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: auto;
+
+  max-width: none;
+
+  background: transparent;
+
+  padding: 0;
+
+  margin: 0;
+
+  border-radius: 0;
+
+  text-align: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  animation: slideUp 0.8s ease;
+}
+
+
+/* =========================================
+   INNER HERO LOGO
+========================================= */
+
+.inner-hero-logo {
+  width: 60px;
+
+  height: 60px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin-bottom: 12px;
+}
+
+
+/* =========================================
+   INNER HERO TITLE
+========================================= */
+
+.inner-hero .hero-content h1 {
+  color: #000;
+
+  font-size: 48px;
+
+  font-weight: 500;
+
+  line-height: 1.2;
+
+  margin: 0 0 12px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   INNER HERO BREADCRUMB
+========================================= */
+
+.inner-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  color: #000;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  text-align: center;
+}
+
+
+/* Breadcrumb Arrow */
+
+.breadcrumb-arrow {
+  color: #000;
+
+  font-size: 28px;
+
+  line-height: 15px;
+}
+
+
+/* =========================================
+   INNER HERO TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .inner-hero {
+    height: 300px;
+  }
+
+  .inner-hero .hero-content h1 {
+    font-size: 44px;
+  }
+
+  .inner-hero-logo {
+    width: 55px;
+
+    height: 55px;
+  }
+}
+
+
+/* =========================================
+   INNER HERO MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .inner-hero {
+    height: 280px;
+
+    margin-top: 80px;
+
+    padding: 20px;
+  }
+
+  .inner-hero-logo {
+    width: 50px;
+
+    height: 50px;
+
+    margin-bottom: 10px;
+  }
+
+  .inner-hero .hero-content h1 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+  }
+
+  .inner-breadcrumb {
+    font-size: 15px;
+
+    gap: 9px;
+  }
+
+  .breadcrumb-arrow {
+    font-size: 25px;
+  }
+}
+
+
+/* =========================================
+   INNER HERO SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .inner-hero {
+    height: 240px;
+
+    margin-top: 80px;
+
+    padding: 15px;
+  }
+
+  .inner-hero-logo {
+    width: 42px;
+
+    height: 42px;
+
+    margin-bottom: 8px;
+  }
+
+  .inner-hero .hero-content h1 {
+    font-size: 34px;
+
+    margin-bottom: 8px;
+  }
+
+  .inner-breadcrumb {
+    font-size: 14px;
+
+    gap: 7px;
+  }
+
+  .breadcrumb-arrow {
+    font-size: 23px;
+  }
+}

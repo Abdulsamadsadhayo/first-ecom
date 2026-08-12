@@ -1,0 +1,527 @@
+/* =========================================================
+   CHECKOUT PAGE
+========================================================= */
+
+.checkout-page {
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.checkout-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   BILLING
+========================================================= */
+
+.billing-section {
+  width: 100%;
+}
+
+.billing-section h1 {
+  margin: 0 0 45px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #111111;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.billing-form {
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  min-height: 52px;
+  padding: 14px 16px;
+
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+
+  outline: none;
+
+  background: #ffffff;
+  color: #333333;
+
+  font-size: 15px;
+
+  transition: border-color 0.2s ease;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #b88e2f;
+}
+
+
+/* =========================================================
+   FIRST + LAST NAME
+========================================================= */
+
+.name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.select-box {
+  width: 100%;
+}
+
+.select-box select {
+  appearance: auto;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   ADDITIONAL INFORMATION
+========================================================= */
+
+.additional-input {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   ORDER SECTION
+========================================================= */
+
+.order-section {
+  width: 100%;
+  margin-top: 70px;
+
+  padding: 45px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+
+/* =========================================================
+   ORDER HEADER
+========================================================= */
+
+.order-head {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.order-head h2 {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #111111;
+}
+
+.order-head h2:last-child {
+  text-align: right;
+}
+
+
+/* =========================================================
+   PRODUCT
+========================================================= */
+
+.product-row {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+
+  gap: 20px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid #eeeeee;
+
+  font-size: 15px;
+  color: #555555;
+}
+
+.product-row span:last-child {
+  text-align: right;
+  color: #222222;
+}
+
+.checkout-product-name {
+  font-weight: 500;
+}
+
+.checkout-product-name small {
+  font-size: 14px;
+  color: #777777;
+}
+
+
+/* =========================================================
+   EMPTY CART
+========================================================= */
+
+.empty-cart-message {
+  padding: 25px 0;
+
+  color: #999999;
+
+  font-size: 15px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 0;
+
+  font-size: 15px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.summary-row span:last-child {
+  font-weight: 500;
+  color: #222222;
+}
+
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 28px 0;
+}
+
+.total-row span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.total-row strong {
+  font-size: 22px;
+  font-weight: 600;
+  color: #b88e2f;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 30px;
+
+  background: #eeeeee;
+}
+
+
+/* =========================================================
+   PAYMENT
+========================================================= */
+
+.payment-section {
+  width: 100%;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  color: #333333;
+}
+
+.payment-option input {
+  width: 16px;
+  height: 16px;
+
+  accent-color: #111111;
+
+  cursor: pointer;
+}
+
+.payment-description {
+  margin: 0 0 25px 28px;
+
+  max-width: 700px;
+
+  font-size: 14px;
+  line-height: 1.8;
+
+  color: #777777;
+}
+
+
+/* =========================================================
+   PRIVACY
+========================================================= */
+
+.privacy-text {
+  margin: 35px 0;
+
+  font-size: 13px;
+  line-height: 1.8;
+
+  color: #777777;
+}
+
+.privacy-text strong {
+  color: #333333;
+}
+
+
+/* =========================================================
+   PLACE ORDER
+========================================================= */
+
+.place-order {
+  display: block;
+
+  width: 230px;
+  min-height: 55px;
+
+  margin-left: auto;
+
+  border: 1px solid #111111;
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.place-order:hover {
+  background: #111111;
+  color: #ffffff;
+}
+
+.place-order:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.place-order:disabled:hover {
+  background: #ffffff;
+  color: #111111;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.checkout-features {
+  width: 100%;
+  padding: 60px 0;
+
+  background: #faf5ee;
+}
+
+.features-container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 35px;
+}
+
+
+/* =========================================================
+   FEATURE ITEM
+========================================================= */
+
+.feature-item {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 45px;
+  height: 45px;
+
+  font-size: 30px;
+
+  color: #222222;
+}
+
+.feature-content h3 {
+  margin: 0 0 6px;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  color: #222222;
+}
+
+.feature-content p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #777777;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .checkout-page {
+    padding: 60px 0;
+  }
+
+  .order-section {
+    padding: 30px;
+  }
+
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .checkout-page {
+    padding: 45px 0;
+  }
+
+  .checkout-container {
+    width: 92%;
+  }
+
+  .billing-section h1 {
+    margin-bottom: 30px;
+
+    font-size: 28px;
+  }
+
+  .name-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .order-section {
+    margin-top: 45px;
+    padding: 22px 18px;
+  }
+
+  .order-head,
+  .product-row {
+    grid-template-columns: 1fr 120px;
+  }
+
+  .order-head h2 {
+    font-size: 17px;
+  }
+
+  .product-row {
+    font-size: 13px;
+  }
+
+  .summary-row {
+    font-size: 14px;
+  }
+
+  .total-row strong {
+    font-size: 18px;
+  }
+
+  .place-order {
+    width: 100%;
+  }
+
+  .features-container {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+}
